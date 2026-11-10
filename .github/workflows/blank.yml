@@ -30,6 +30,6 @@ jobs:
           server: ${{ secrets.SFTP_HOST }}
           port: ${{ secrets.SFTP_PORT }}
           ssh_private_key: ${{ secrets.SFTP_SSH_KEY }}
-          local_path: '.'
+          local_path: './*'
           remote_path: '/var/www/html/ed.thebyrnefamily.ca'
           delete_remote_files: false
