@@ -27,11 +27,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-        working-directory: vue_example
+
+      # change working-directory:
+      - name: Change directory
+        run: cd vue_example
 
       # Install dependencies
       - name: Install dependencies
         run: npm install
+
+      # Build Project
+      - name: Run Build
+        run: npm run build
+        
       # deploy using SFTP
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.6
