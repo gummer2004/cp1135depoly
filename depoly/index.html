@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#f8fafc" />
+		<title>Launchpad — Ship with confidence</title>
+		<meta name="description" content="A simple home for your deployments. Preview, monitor, and ship your projects with Launchpad." />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							sans: ['DM Sans', 'sans-serif'],
+							display: ['Space Grotesk', 'sans-serif'],
+						},
+						colors: {
+							ink: '#18241f',
+							mint: '#b8f28b',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="bg-slate-50 font-sans text-ink antialiased">
+		<header class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
+			<a href="#home" class="flex items-center gap-2.5" aria-label="Launchpad home">
+				<span class="grid h-9 w-9 place-items-center rounded-xl bg-ink text-mint">
+					<svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" aria-hidden="true"><path d="M12 3.5 20.5 12 12 20.5 3.5 12 12 3.5Z" stroke="currentColor" stroke-width="2"/><path d="m12 8 4 4-4 4-4-4 4-4Z" fill="currentColor"/></svg>
+				</span>
+				<span class="font-display text-xl font-bold tracking-tight">launchpad</span>
+			</a>
+			<nav class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex" aria-label="Main navigation">
+				<a href="#features" class="transition hover:text-ink">Features</a>
+				<a href="#workflow" class="transition hover:text-ink">How it works</a>
+				<a href="#pricing" class="transition hover:text-ink">Pricing</a>
+			</nav>
+			<a href="#get-started" class="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700">Get started <span aria-hidden="true">↗</span></a>
+		</header>
+
+		<main id="home">
+			<section class="relative overflow-hidden px-6 pb-20 pt-16 sm:pt-24 lg:px-10 lg:pb-28">
+				<div class="pointer-events-none absolute -right-36 -top-32 h-96 w-96 rounded-full bg-mint/50 blur-3xl"></div>
+				<div class="relative mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1fr_0.95fr]">
+					<div class="max-w-2xl">
+						<div class="mb-6 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-semibold text-slate-600 shadow-sm">
+							<span class="h-2 w-2 rounded-full bg-emerald-500"></span> Your next launch starts here
+						</div>
+						<h1 class="font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">Ship good work.<br /><span class="text-slate-400">Leave the busywork.</span></h1>
+						<p class="mt-6 max-w-lg text-lg leading-8 text-slate-600">A calmer way to deploy your projects. Preview every change, keep an eye on production, and get back to building.</p>
+						<div class="mt-8 flex flex-wrap items-center gap-4" id="get-started">
+							<a href="#workflow" class="rounded-full bg-ink px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-slate-900/10 transition hover:-translate-y-0.5 hover:bg-slate-700">Start building <span class="ml-2" aria-hidden="true">→</span></a>
+							<a href="#features" class="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold transition hover:border-slate-500">Explore features</a>
+						</div>
+						<div class="mt-9 flex items-center gap-3 text-sm text-slate-500">
+							<div class="flex -space-x-2" aria-hidden="true">
+								<span class="grid h-8 w-8 place-items-center rounded-full border-2 border-slate-50 bg-orange-200 text-xs font-bold text-orange-800">J</span>
+								<span class="grid h-8 w-8 place-items-center rounded-full border-2 border-slate-50 bg-sky-200 text-xs font-bold text-sky-800">A</span>
+								<span class="grid h-8 w-8 place-items-center rounded-full border-2 border-slate-50 bg-violet-200 text-xs font-bold text-violet-800">M</span>
+							</div>
+							<span><strong class="text-ink">2,000+</strong> makers shipped this week</span>
+						</div>
+					</div>
+
+					<div class="relative mx-auto w-full max-w-xl">
+						<div class="absolute -inset-4 rotate-3 rounded-[2rem] bg-mint/70"></div>
+						<div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl shadow-slate-900/10">
+							<div class="flex items-center justify-between border-b border-slate-100 px-5 py-4">
+								<div class="flex items-center gap-2"><span class="h-2.5 w-2.5 rounded-full bg-rose-400"></span><span class="h-2.5 w-2.5 rounded-full bg-amber-300"></span><span class="h-2.5 w-2.5 rounded-full bg-emerald-400"></span></div>
+								<span class="text-xs font-medium text-slate-400">launchpad / overview</span>
+								<span class="text-slate-400" aria-hidden="true">···</span>
+							</div>
+							<div class="p-6 sm:p-8">
+								<div class="flex items-start justify-between">
+									<div><p class="text-sm text-slate-500">Good morning, Alex</p><h2 class="mt-1 font-display text-2xl font-bold">Your projects</h2></div>
+									<button type="button" class="rounded-lg bg-ink px-3.5 py-2 text-xs font-semibold text-white">＋ New project</button>
+								</div>
+								<div class="mt-7 space-y-3">
+									<div class="flex items-center justify-between rounded-2xl border border-slate-100 p-4">
+										<div class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-xl bg-violet-100 text-lg">✳</span><div><p class="text-sm font-bold">studio-site</p><p class="mt-0.5 text-xs text-slate-400">main · 4 min ago</p></div></div>
+										<span class="rounded-full bg-emerald-50 px-2.5 py-1 text-[11px] font-semibold text-emerald-700">● Live</span>
+									</div>
+									<div class="flex items-center justify-between rounded-2xl border border-slate-100 p-4">
+										<div class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-xl bg-sky-100 text-lg">◈</span><div><p class="text-sm font-bold">tiny-commerce</p><p class="mt-0.5 text-xs text-slate-400">preview · 18 min ago</p></div></div>
+										<span class="rounded-full bg-amber-50 px-2.5 py-1 text-[11px] font-semibold text-amber-700">◷ Building</span>
+									</div>
+								</div>
+								<div class="mt-6 rounded-2xl bg-slate-50 p-4">
+									<div class="flex items-center justify-between"><p class="text-xs font-semibold text-slate-600">Build activity</p><p class="text-[11px] text-slate-400">Last 7 days</p></div>
+									<div class="mt-5 flex h-16 items-end gap-2" aria-label="Build activity chart">
+										<span class="h-7 flex-1 rounded-t bg-emerald-200"></span><span class="h-10 flex-1 rounded-t bg-emerald-300"></span><span class="h-8 flex-1 rounded-t bg-emerald-200"></span><span class="h-12 flex-1 rounded-t bg-emerald-300"></span><span class="h-9 flex-1 rounded-t bg-emerald-200"></span><span class="h-14 flex-1 rounded-t bg-emerald-400"></span><span class="h-11 flex-1 rounded-t bg-emerald-300"></span><span class="h-16 flex-1 rounded-t bg-ink"></span><span class="h-10 flex-1 rounded-t bg-emerald-200"></span><span class="h-13 flex-1 rounded-t bg-emerald-300"></span><span class="h-8 flex-1 rounded-t bg-emerald-200"></span><span class="h-12 flex-1 rounded-t bg-emerald-300"></span>
+									</div>
+									<div class="mt-2 flex justify-between text-[10px] text-slate-400"><span>Mon</span><span>Wed</span><span>Fri</span><span>Sun</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="absolute -bottom-5 -left-7 hidden items-center gap-3 rounded-2xl border border-slate-100 bg-white p-3.5 shadow-xl sm:flex"><span class="grid h-9 w-9 place-items-center rounded-full bg-emerald-100 text-emerald-700">✓</span><div><p class="text-xs font-bold">Deployment successful</p><p class="mt-0.5 text-[11px] text-slate-400">Your site is looking good</p></div></div>
+					</div>
+				</div>
+			</section>
+
+			<section id="features" class="border-y border-slate-200 bg-white px-6 py-16 lg:px-10 lg:py-20">
+				<div class="mx-auto max-w-7xl">
+					<div class="mx-auto max-w-xl text-center"><p class="text-sm font-bold uppercase tracking-[0.18em] text-emerald-700">Less friction, more flow</p><h2 class="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">Everything you need to move forward.</h2><p class="mt-4 leading-7 text-slate-600">From your first preview to your hundredth release, keep the important stuff in one place.</p></div>
+					<div class="mt-12 grid gap-5 md:grid-cols-3">
+						<article class="rounded-2xl border border-slate-200 p-6 transition hover:-translate-y-1 hover:shadow-lg"><span class="grid h-11 w-11 place-items-center rounded-xl bg-violet-100 text-violet-700"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" aria-hidden="true"><path d="M5 5h14v14H5zM9 9h6v6H9z" stroke="currentColor" stroke-width="1.8"/></svg></span><h3 class="mt-5 font-display text-lg font-bold">Preview every change</h3><p class="mt-2 text-sm leading-6 text-slate-600">Give every branch a shareable preview, so your team can review before you ship.</p></article>
+						<article class="rounded-2xl border border-slate-200 p-6 transition hover:-translate-y-1 hover:shadow-lg"><span class="grid h-11 w-11 place-items-center rounded-xl bg-emerald-100 text-emerald-700"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" aria-hidden="true"><path d="M4 17 9 12l3 3 7-8M15 7h4v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3 class="mt-5 font-display text-lg font-bold">Know when it’s live</h3><p class="mt-2 text-sm leading-6 text-slate-600">Clear build status and useful updates keep you in the loop without the noise.</p></article>
+						<article class="rounded-2xl border border-slate-200 p-6 transition hover:-translate-y-1 hover:shadow-lg"><span class="grid h-11 w-11 place-items-center rounded-xl bg-amber-100 text-amber-700"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" aria-hidden="true"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12m0-12.72-2.12 2.12m-8.48 8.48-2.12 2.12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/></svg></span><h3 class="mt-5 font-display text-lg font-bold">Stay focused on building</h3><p class="mt-2 text-sm leading-6 text-slate-600">A simple workflow takes care of the repetitive parts, so you can focus on the good ideas.</p></article>
+					</div>
+				</div>
+			</section>
+
+			<section id="workflow" class="px-6 py-20 lg:px-10 lg:py-24">
+				<div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 rounded-3xl bg-ink px-7 py-12 text-white sm:px-12 md:flex-row">
+					<div><p class="text-sm font-semibold text-mint">READY WHEN YOU ARE</p><h2 class="mt-3 max-w-xl font-display text-3xl font-bold sm:text-4xl">Your next great thing is one deploy away.</h2><p class="mt-3 max-w-lg text-sm leading-6 text-slate-300">Keep your workflow simple. Make something you love, then put it out into the world.</p></div>
+					<a href="#get-started" class="shrink-0 rounded-full bg-mint px-6 py-3.5 text-sm font-bold text-ink transition hover:bg-white">Let’s get started <span class="ml-2" aria-hidden="true">→</span></a>
+				</div>
+			</section>
+		</main>
+
+		<footer id="pricing" class="border-t border-slate-200 bg-white px-6 py-7 lg:px-10">
+			<div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-sm text-slate-500 sm:flex-row">
+				<a href="#home" class="font-display font-bold text-ink">launchpad<span class="text-emerald-600">.</span></a>
+				<p>Made for people who love to make things. © 2025 Launchpad</p>
+				<a href="mailto:hello@example.com" class="transition hover:text-ink">Say hello <span aria-hidden="true">↗</span></a>
+			</div>
+		</footer>
+	</body>
+</html>
