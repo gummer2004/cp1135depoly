@@ -22,6 +22,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Fetch latest code
         uses: actions/checkout@v4
+      # Setup Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+        working-directory: vue_example
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
       # deploy using SFTP
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.6
@@ -30,6 +40,6 @@ jobs:
           server: ${{ secrets.SFTP_HOST }}
           port: ${{ secrets.SFTP_PORT }}
           ssh_private_key: ${{ secrets.SFTP_SSH_KEY }}
-          local_path: './*'
+          local_path: './vue_example/dist'
           remote_path: '/var/www/html/ed.thebyrnefamily.ca'
           delete_remote_files: false
