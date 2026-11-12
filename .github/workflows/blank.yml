@@ -28,16 +28,18 @@ jobs:
         with:
           node-version: '20'
 
-      # change working-directory:
-      - name: Change directory
-        run: cd vue_example
+      # # change working-directory:
+      # - name: Change directory
+      #   run: cd vue_example
 
       # Install dependencies
       - name: Install dependencies
+        working-directory: ./vue_example
         run: npm install
 
       # Build Project
       - name: Run Build
+        working-directory: ./vue_example
         run: npm run build
         
       # deploy using SFTP
