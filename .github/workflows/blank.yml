@@ -50,6 +50,6 @@ jobs:
           server: ${{ secrets.SFTP_HOST }}
           port: ${{ secrets.SFTP_PORT }}
           ssh_private_key: ${{ secrets.SFTP_SSH_KEY }}
-          local_path: './vue_example/dist'
+          local_path: './vue_example/dist/*'
           remote_path: '/var/www/html/ed.thebyrnefamily.ca'
           delete_remote_files: false
