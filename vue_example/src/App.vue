@@ -3,7 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import { ref } from 'vue'
 
-const msg = ref("Hello from Vue!")
+const msg = ref("Hello its Vue!")
 
 </script>
 
