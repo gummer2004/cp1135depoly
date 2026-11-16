@@ -1,6 +1,10 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import { ref } from 'vue'
+
+const msg = ref("Hello from Vue!")
+
 </script>
 
 <template>
@@ -8,7 +12,7 @@ import TheWelcome from './components/TheWelcome.vue'
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="My First Vue App!" />
+      <HelloWorld :msg="msg" />
     </div>
   </header>
 
